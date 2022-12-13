@@ -8,6 +8,7 @@ import { setupServer } from 'msw/node'
 import { cleanup, render, screen } from '@testing-library/react'
 import { SWRConfig } from 'swr'
 import CommentPage from '../pages/comment-page'
+import 'setimmediate'
 
 const server = setupServer(
   rest.get(

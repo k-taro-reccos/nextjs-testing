@@ -9,6 +9,7 @@ import { cleanup, render, screen } from '@testing-library/react'
 import { TASK } from '../types/Types'
 import { SWRConfig } from 'swr'
 import TaskPage from '../pages/task-page'
+import 'setimmediate'
 
 const server = setupServer(
   rest.get('https://jsonplaceholder.typicode.com/todos/', (req, res, ctx) => {
