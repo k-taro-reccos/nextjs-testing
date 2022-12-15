@@ -7,7 +7,7 @@ import { rest } from 'msw'
 import { getPage, initTestHelpers } from 'next-page-tester'
 import { setupServer } from 'msw/node'
 import { cleanup, render, screen } from '@testing-library/react'
-import 'setimmediate'
+
 
 initTestHelpers()
 
